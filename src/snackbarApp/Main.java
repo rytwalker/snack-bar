@@ -23,7 +23,11 @@ public class Main {
         if (buySuccess) {
             soda.buySnack(3);
         }
+
+        System.out.println("Transaction 1: \n");
+        System.out.println(jane.getName() + " cash: ");
         System.out.println(jane.getCashOnHand());
+        System.out.println(soda.getName() + " quantity: ");
         System.out.println(soda.getQuantity());
 
         double transactionTwoCost = pretzel.getTotalCost(1);
@@ -31,7 +35,10 @@ public class Main {
         if (buySuccess) {
             pretzel.buySnack(1);
         }
+        System.out.println("Transaction 2: ");
+        System.out.println(jane.getName() + " cash: ");
         System.out.println(jane.getCashOnHand());
+        System.out.println(pretzel.getName() + " quantity: ");
         System.out.println(pretzel.getQuantity());
 
         double transactionThreeCost = soda.getTotalCost(2);
@@ -39,10 +46,14 @@ public class Main {
         if (buySuccess) {
             soda.buySnack(2);
         }
+        System.out.println("Transaction 3: ");
+        System.out.println(bob.getName() + " cash: ");
         System.out.println(bob.getCashOnHand());
+        System.out.println(soda.getName() + " quantity: ");
         System.out.println(soda.getQuantity());
 
         jane.addCash(10.0);
+        System.out.println("Jane found $10! cash: ");
         System.out.println(jane.getCashOnHand());
 
         double transactionFourCost = chocolateBar.getTotalCost(1);
@@ -50,10 +61,14 @@ public class Main {
         if (buySuccess) {
             chocolateBar.buySnack(1);
         }
+        System.out.println("Transaction 4: ");
+        System.out.println(jane.getName() + " cash: ");
         System.out.println(jane.getCashOnHand());
+        System.out.println(chocolateBar.getName() + " quantity: ");
         System.out.println(chocolateBar.getQuantity());
 
         pretzel.addQuantity(12);
+        System.out.println(pretzel.getName() + " quantity: ");
         System.out.println(pretzel.getQuantity());
 
         double transactionFiveCost = pretzel.getTotalCost(3);
@@ -61,7 +76,10 @@ public class Main {
         if (buySuccess) {
             pretzel.buySnack(3);
         }
+        System.out.println("Transaction 5: ");
+        System.out.println(bob.getName() + " cash: ");
         System.out.println(bob.getCashOnHand());
+        System.out.println(pretzel.getName() + " quantity: ");
         System.out.println(pretzel.getQuantity());
 
     }

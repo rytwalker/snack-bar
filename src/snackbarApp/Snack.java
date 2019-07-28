@@ -57,7 +57,7 @@ public class Snack {
         this.quantity -= quantity;
     }
 
-    public doube getTotalCost(double quantity) {
+    public double getTotalCost(double quantity) {
         return this.cost * quantity;
     }
 }
